@@ -1,0 +1,417 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("./images/bg-top.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-color: #f2f2f2;
+    background-size: contain;
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root {
+    --container-width: 900px;
+    --container-full-width:100%;
+}
+.container {
+    margin:auto;
+}
+.container-header{
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    height: 510px;
+    margin: auto;
+    margin-top: 23px;
+    position: relative;
+    left: 25px;
+}
+.header-top-left {
+    position: absolute;
+    left:450px;
+}
+.header-top-right{
+    position: absolute;
+    left:1030px;
+    width: 50%;
+}
+.header-top-content {
+    position: absolute;
+    top: -228px;
+    left: 92px;
+}
+
+.list {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 23%;
+    padding: 10px 0;
+}
+.header-top-list__left {
+    position: relative;
+    right: 20%;
+}
+.cover{
+    margin-top: 25%;
+}
+.header-top-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-top-list li {
+    padding-right: 10px;
+    list-style: none;
+    margin: 0 5px;
+}
+.header-top-list li:first-child,
+.header-top-list li:nth-child(1),
+.header-top-list li:nth-child(2){
+    border-right: 1px solid white;
+    padding: 5px 20px;
+}
+.header-top-list li:last-child {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 5px 20px;
+}
+.header-top-list li > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.header-top-left ul li, .header-top-right ul li {
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    height: 20px;
+    padding-top: 3px;
+    margin-top: 10px;      
+}
+.header-top-left ul li a:hover, .header-top-right ul li a:hover {
+    opacity: 80%;
+}
+.header-top-left ul li a, .header-top-right ul li a {
+    text-decoration: none;
+    color: #e5fafa;
+    font-size: 15px;
+}
+.header-top-left ul li{
+    border-right: solid 1px #6f7179;
+    padding-right: 20px;
+}
+.header-top-right ul li {
+    border-left: 1px solid #6f7179;
+    padding-left: 20px;
+}
+.header-top-left ul {
+    display: flex;
+    justify-content: start;
+}
+
+.header-top-right ul {
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+
+.header-banner  {
+    width: 1000px;
+    height: 260px;
+    margin: auto;
+    display: flex;
+    background-color: #112141;
+}
+.header-banner-item1 {
+    width: 242px;
+    height: 260px;
+    padding: 2px;
+    margin-right: 5px;
+}
+.header-banner-item1 {
+    border: px solid #112141;
+}
+.download {
+    height: 126px;
+    background-image: url("./images/btn_taigame.jpg");
+}
+.lantern {
+    position: relative;
+    position: absolute;
+    top: 509px;
+    left: -78px;
+}
+.registration {
+    height: 66px;
+    background-image: url("./images/buttons-left.png");
+    background-position: 0 -1px;
+}
+.registration:hover {
+    background-position: -248px 0;
+}
+.add-card{
+    width:240px;
+    height:60px;
+    background-image: url("./images/buttons-left.png");
+    background-position: 0 -66px;
+}
+#add-card-hover{
+    background-position: -248px -66px;
+}
+.header-banner-item2 img {
+    width: 492px;
+    height: 259px;
+    margin: auto;
+}
+.header-banner-item3 {
+    width: 235px;
+    height: 255px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: auto;
+    margin-top: 5px;
+}
+.header-banner-item3 img {
+    column-span: 3;
+}
+.button-1 {
+    width: 112px;
+    height: 104px;
+    background-image: url("./images/buttons-right.png");
+    background-position: 0 -10px;
+}
+.button-2 {
+    width: 112px;
+    height: 104px;
+    background-image: url("./images/buttons-right.png");
+    background-position: -121px -10px;
+}
+.button-3 {
+    width: 112px;
+    height: 104px;
+    background-image: url("./images/buttons-right.png");
+    background-position: 0px -120px;
+}
+.button-4 {
+    width: 112px;
+    height: 104px;
+    background-image: url("./images/buttons-right.png");
+    background-position: -121px -120px;
+}
+.button-1:hover, .button-2:hover, .button-3:hover, .button-4:hover {
+    opacity: 80%;
+}
+.footer-banner {
+    width: 1000px;
+    height: 777px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 741px 240px;
+    column-gap: 14px;
+}
+.content-top {
+    height: 110px;
+    display: flex;
+}
+.content-top button {
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-top button + button {
+    margin-left: 5px;
+}
+.button1 {
+    background-image: url("./images/cuuamlenh-vip-giftcode.png");
+    background-position: -2px 0;
+}
+.button1:hover {
+    opacity: 80%;
+}
+.button2 {
+    background-image: url("./images/cuuamlenh-vip-giftcode.png");
+    background-position: -249px 0;
+}
+.button2:hover {
+    opacity: 80%;
+}
+.button3 {
+    background-image: url("./images/cuuamlenh-vip-giftcode.png");
+    background-position: -500px 0;
+}
+.button3:hover {
+    opacity: 80%;
+}
+.menu {
+    height: 60px;
+    width: 740px;
+    border: 1px solid red;
+    background-image: url("./images/news-header-bg.png");
+    position: relative;
+    right: 5px;
+    bottom: 6px;
+    border-left: 0.1px solid #1f3252;
+    border-bottom: 2px solid #1f3252;
+    border-right: 0.1px solid #1f3252;
+}
+.menu ul li {
+    list-style: none;
+    margin: auto;
+    margin-top: 20px;
+}
+.menu ul li a {
+    color: #c7a87a;
+    float: left;
+    text-decoration: none;
+    padding-left: 41px;
+}
+.menu ul li a:hover {
+    color: #e5fafa;
+}
+.content-bottom {
+    height: 688px;
+    border: 6px solid #1f3252;
+}
+.content-item-1, .content-item-2, .content-item-3 {
+    width: 655px;
+    height: 150px;
+    position: relative;
+    left: 18px;
+    display: grid;
+    grid-template-columns: 150px 490px;
+    column-gap: 20px;
+}
+.content-item-1 {
+    margin-top: 15px;
+}
+.content-item-2, .content-item-3 {
+    margin-top: 28px;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #c7a87a;
+}
+.image img {
+    width: 139px;
+    height: 139px;
+}
+.footer-banner-content-right {
+    width: 240px;
+    height: 310px;
+    background-color: #112141;
+    margin-top: 10px;
+}
+.footer-banner-content-right button {
+    width: 228px;
+    height: 52px;
+    margin-left: 6px;
+}
+#but-1 {
+    background-image: url("./images/links-right.png");
+    background-position: -2px 0px;
+}
+#but-1:hover {
+    opacity: 80%;
+}
+#but-2 {
+    background-image: url("./images/links-right.png");
+    background-position: -2px -60px;
+}
+#but-2:hover {
+    opacity: 80%;
+}
+#but-3 {
+    background-image: url("./images/links-right.png");
+    background-position: -2px -120px;
+}
+#but-3:hover {
+    opacity: 80%;
+}
+#but-4 {
+    background-image: url("./images/links-right.png");
+    background-position: -2px -180px;
+}
+#but-4:hover {
+    opacity: 80%;
+}
+#but-5 {
+    background-image: url("./images/links-right.png");
+    background-position: -2px -227px;
+}
+#but-5:hover {
+    opacity: 80%;
+}
+.footer-banner-content-right button + button {
+    margin-top: 5px;
+}
+.main-content b {
+    color: #b70f0b;
+    margin-left: 10px;
+}
+#head-1 {
+    height: 36px;
+    border-left: 6px solid #b70f0b;
+}
+#head-2, #head-3 {
+    border-left: 6px solid #b70f0b;
+}
+#bot {
+    color: #696969;
+}
+#bot i {
+    opacity: 80%;
+}
+.more {
+    width: 178px;
+    height: 48px;
+    position: absolute;
+    right: 669px;
+    top: 1286px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+.more button {
+    width: 82px;
+    height: 47px;
+    margin: auto;
+    border: 3px solid #bfbfbf;
+    background-color: #1f3252;
+}
+.more button p {
+    color: #6f7179;
+}
+.more button:hover {
+    opacity: 80%;
+}
+.footer {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 137px 700px;
+    column-gap: 70px;
+    position: relative;
+    margin-bottom: -50px;
+    background-image: url("./images/bg-bottom.jpg");
+    background-size: cover;
+}
+
+.footer-content p {
+    margin: auto;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 70%;
+}
